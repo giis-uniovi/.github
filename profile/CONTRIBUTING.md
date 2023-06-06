@@ -1,25 +1,27 @@
 # Contributing to giis-uniovi repositories
 
-Unless stated otherwise, these policies and gidelines are applicable to any contribtuion on any repository located at https://github.com/giis-unovi.
+Unless otherwise stated, these policies and gidelines are applicable to any contribtuion on any repository located at https://github.com/giis-unovi.
 
 ## General policies and guidelines
 
 - Pull requests (PR):
   - All contributions from non administrators must be done via a PR against the default branch (`main`)
   - When appropriate, create issues to discuss possible solutions for a change before start coding
-  - Keep the PRs focused on a single change. 
+  - Always keep the PRs focused on a single change. 
     Use separated pull requests for changes related to functionality, formatting or refactoring
-  - By default, all PRs are squashed before merged and the source branch deleted. Do not reuse feature branches.
-  - If for any reason you need to include more than one commit in a PR, ensure that you have the 
-    minimum set of well identified commits and state this clearly in the PR description (Squash commits at your local branch if needed)
+  - By default, all PRs are squashed before merged and the source branch deleted to keep a linear history. Do not reuse feature branches.
+  - If for any reason you need to include more than one commit in a PR,
+    ensure the PR includes a small set of well identified commits (Squash commits at your local branch if needed)
+    and commits are rebased onto the default branch.
+    State this clearly in the PR description 
   - If a change takes time to develop, consider using feature flags and split it into incremental PRs.
     Rebase frequently onto the default branch.
   - Although part of the documentation could be in Spanish, new documentation should be written in english, 
     as well as the titles of PRs and commits
 - Coding:
   - Static analysis:
-    - Every build wil run SonarQube at [sonarcloud.io](https://sonarcloud.io/organizations/giis/projects)
-    - We follow a zero issue strict policy as reported by SonarQube (including smells) and zero compilation warnings
+    - Every build will be checked by SonarQube at [sonarcloud.io](https://sonarcloud.io/organizations/giis/projects)
+    - We enforce a zero issue strict policy as reported by SonarQube (including smells) and zero compilation warnings
   - Test coverage:
     - Ensure that new or updated functionality is covered by new or existing tests
     - We do not enforce a minimum percentage of test coverage, but you may be requested to complete your tests before merging into the main branch
@@ -28,7 +30,7 @@ Unless stated otherwise, these policies and gidelines are applicable to any cont
     - Limit the size of lines of code and comments, a limit of 120 is a good compromise
     - Use a single blank line only to separate logical blocks of code
     - Comment your code, but avoid trivial and redundant comments
-      that do not provide useful information that can be known from the names of variables, fuctions and classes
+      that do not provide useful information that can be known from the names of variables, fuctions, classes, etc.
     - You can be asked to make changes regarding coding style before merging a PR
 
 ## Releases and snapshots (Java)
@@ -39,7 +41,7 @@ A snapshot for each branch is created automatically after each push.
 Snapshots are published to GitHub packages with the name `<artifact>-<version>-<branch>-SNAPSHOT`
 
 To consume a snapshot from your development environment, ensure you run maven with the `-U` option 
-and declare the GitHub repository in the pom.xml, example:
+and declare the GitHub repository in the pom.xml, e.g.
 ```xml
   <repositories>
     <repository>
