@@ -18,6 +18,8 @@ Unless otherwise stated, these policies and gidelines are applicable to any cont
     Rebase frequently onto the default branch.
   - Although part of the documentation could be in Spanish, new documentation should be written in english, 
     as well as the titles of PRs and commits
+  - Note that when running from a fork, publish and sonarqube jobs may fail or be skipped.
+    An administrator will run sonarqube job before merging your PR.
 - Coding:
   - Static analysis:
     - Every build will be checked by SonarQube at [sonarcloud.io](https://sonarcloud.io/organizations/giis/projects)
