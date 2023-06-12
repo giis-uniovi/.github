@@ -6,7 +6,7 @@ Unless otherwise stated, these policies and gidelines are applicable to any cont
 
 - Pull requests (PR):
   - All contributions from non administrators must be done via a PR against the default branch (`main`)
-  - When appropriate, create issues to discuss possible solutions for a change before start coding
+  - By default, clearly and concisely written issues should be created to discuss potential changes before coding begins
   - Always keep the PRs focused on a single change. 
     Use separated pull requests for changes related to functionality, formatting or refactoring
   - By default, all PRs are squashed before merged and the source branch deleted to keep a linear history. Do not reuse feature branches.
@@ -28,12 +28,12 @@ Unless otherwise stated, these policies and gidelines are applicable to any cont
     - Ensure that new or updated functionality is covered by new or existing tests
     - We do not enforce a minimum percentage of test coverage, but you may be requested to complete your tests before merging into the main branch
   - Coding style:
-    - We don't enforce a particular code style, but contributions must follow the usual coding guidelines and common sense
+    - We don't enforce a particular code style, but contributions must follow the usual coding guidelines and common sense.
+      You can be asked to make changes regarding coding style before merging a PR
     - Limit the size of lines of code and comments, a limit of 120 is a good compromise
     - Use a single blank line only to separate logical blocks of code
-    - Comment your code, but avoid trivial and redundant comments
-      that do not provide useful information that can be known from the names of variables, fuctions, classes, etc.
-    - You can be asked to make changes regarding coding style before merging a PR
+    - Use clear and concise comments in your code. Avoid trivial and redundant comments
+      that do not provide additional useful information.
 
 ## Releases and snapshots (Java)
 
