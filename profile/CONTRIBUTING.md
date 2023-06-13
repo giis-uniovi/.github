@@ -1,6 +1,6 @@
 # Contributing to giis-uniovi repositories
 
-Unless otherwise stated, these policies and guidelines are applicable to any contribution on any repository located at https://github.com/giis-unovi.
+Unless otherwise stated, these policies and guidelines are applicable to any contribution on any repository located at https://github.com/giis-uniovi.
 
 ## General policies and guidelines
 
@@ -42,7 +42,8 @@ Releases are published to maven central when the default branch is labeled by th
 A snapshot for each branch is created automatically after each push.
 Snapshots are published to GitHub packages with the name `<artifact>-<version>-<branch>-SNAPSHOT`
 
-To consume a snapshot from your development environment, ensure you run maven with the `-U` option 
+To consume a snapshot from your development environment, remember to use the maven `-U` option 
+to update snapshots
 and declare the GitHub repository in the pom.xml, e.g.
 ```xml
   <repositories>
