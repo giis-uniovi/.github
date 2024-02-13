@@ -9,6 +9,8 @@ Unless otherwise stated, these policies and guidelines are applicable to any con
   - By default, clearly and concisely written issues should be created to discuss potential changes before coding begins
   - Always keep the PRs focused on a single change. 
     Use separated pull requests for changes related to functionality, formatting or refactoring.
+  - Do not force-push the feature branch during revision to make easier to track the changes.
+    In general, limit to the minimum posible the number of force-pushes that are made on a branch that has an associated pull request.
   - By default, all PRs are squashed before merged and the source branch deleted to keep a linear history. Do not reuse feature branches.
   - If for any reason you need to include more than one commit in a PR,
     ensure the PR includes a small set of well identified commits (Squash commits at your local branch if needed).
