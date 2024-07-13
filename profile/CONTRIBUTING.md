@@ -21,6 +21,12 @@ Unless otherwise stated, these policies and guidelines are applicable to any con
     as well as the titles of PRs and commits.
   - Note that when running from a fork, the publish and sonarqube jobs may fail or be skipped.
     An administrator will run sonarqube job before merging your PR.
+- Multiple pull requests for dependent repositories (e.g. Given a set of changes that require creating PRs in two repositories A and B, where A depends on B)
+  - Use branches with the same name in each repository.
+  - Set A to reference the branch snapshot of B.
+  - When finish, you can submit A and B PRs at the same time without wainting for a release of B.
+  - Clearly indicate in the PR that A is still referencing a branch snapshot of B.
+  - After the review, the administrator will merge and release B, update A to reference this release and finally merge A.
 - Coding:
   - Static analysis:
     - Every build will be checked by SonarQube at [sonarcloud.io](https://sonarcloud.io/organizations/giis/projects).
