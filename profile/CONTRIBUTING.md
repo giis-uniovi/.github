@@ -24,9 +24,9 @@ Unless otherwise stated, these policies and guidelines are applicable to any con
 - Multiple pull requests for dependent repositories (e.g. Given a set of changes that require creating PRs in two repositories A and B, where A depends on B)
   - Use branches with the same name in each repository.
   - Set A to reference the branch snapshot of B.
-  - When finish, you can submit A and B PRs at the same time without wainting for a release of B.
+  - When finish, you can submit A and B PRs at the same time without wainting for a merge or release of B.
   - Clearly indicate in the PR that A is still referencing a branch snapshot of B.
-  - After the review, the administrator will merge and release B, update A to reference this release and finally merge A.
+  - After the review, the administrator will merge (and release if required) B, update A to reference the main snapshot (or the release) and finally merge A.
 - Coding:
   - Static analysis:
     - Every build will be checked by SonarQube at [sonarcloud.io](https://sonarcloud.io/organizations/giis/projects).
